@@ -1,23 +1,23 @@
-# Challenge: Testing and Validation
+# チャレンジ: テストと検証
 
-## Description
-Use your knowledge of testing to complete the requirements below.
-- Only "Mt. Fuji" requirements need to be completed for this Challenge
-- "Mt. Kilimanjaro" and "Mt. Everest" are optional for completion. They are intended to challenge you and help you grow your skills. In order to complete them, these optional difficulty levels may require you to do independent research for topics not covered in this course.
+## 説明
+テストに関する知識を活用し、次の要件を満たすようにしてください。
+- このチャレンジで必須の要件は「富士」だけです。
+- 「キリマンジャロ」と「エベレスト」はオプションです。これらの要件は、皆さんのスキルを高めるために難しい問題になっています。場合によっては、このコースで説明していないトピックについて自分で調べる必要があります。
 
-## Requirements
-Write a function `my_assert` in Python, in the script below, that accepts two arguments: 
-1. an expression `expr` that will evaluate to a bool value.
-2. an optional message `msg` to be returned if `expr` evaluates to `false`.
+## 要件
+以下のスクリプトの中に、次の2つの引数を受け取る関数 `my_assert` をPythonで記述してください。 
+1. `expr` はブール値として評価される式です。
+2. `msg` はオプションのメッセージであり、`expr` が `false` と評価された場合に返されます。
 
-Your function should also include the following:
-- return an error message "No expression provided" if there is no `expr` argument.
-- a generic error message to be used if `msg` is not provided.
+関数には次の機能も含めてください。
+- `expr` 引数が指定されていない場合は、エラーメッセージ「No expression provided」(式を指定していません) を返します。
+- `msg` が指定されていない場合は、一般的なエラーメッセージを使用します。
 
-Then, using `my_assert`, complete the tests for the functions provided. Please start writing your code after the "#----Your code here----" comment.
+次に、`my_assert` を使用して、ここに書かれている関数をテストします。「#---- ここにコードを書いてください ----」というコメント以降にコードを書いてください。
 
 ```python
-#----These functions do not need to be changed----
+#---- ここにある関数を変更する必要はありません ----
 names = ["Nick", "Lewis", "Nikos"]
 
 def contains(name, list_of_names):
@@ -43,38 +43,38 @@ def divide_by_two(num):
     return num / 2
 
 def greeting(name, num):
-    message = f"Hello, {name}. It is {num} degrees warmer today than yesterday"
+    message = f"Hello, {name}.It is {num} degrees warmer today than yesterday"
     print(message)
     return message
 
-#----Your code here----
-#----Difficulty: Mt. Fuji----
+#---- ここにコードを書いてください ----
+#---- 難易度: 富士 ----
 
-#define `my_assert` here, and use it for the subsequent tests
+# `my_assert` をここに定義し、以降のテストに使用してください。
 
-#make a test for `contains` here
+# `contains` のテストをここに書いてください。
 
-#make a test for `getName` here
+# `getName` のテストをここに書いてください。
 
-#make a test for `addName` here
+# `addName` のテストをここに書いてください。
 
-#make a test for `addTwo` here
+# `addTwo` のテストをここに書いてください。
 
-#make a test for `divideByTwo` here
+# `divideByTwo` のテストをここに書いてください。
 
-#make a test for `greeting` here
-
-
-#----Difficulty: Mt Kilimanjaro----
-
-#make a test for `my_assert` to check if it correctly returns the given optional `msg`
-
-#make a test for your own `my_assert` function, using `my_assert` on itself to check if it correctly returns an error if no `expr` provided.
+# `greeting` のテストをここに書いてください。
 
 
+#---- 難易度: キリマンジャロ ----
 
-#----Difficulty: Mt. Everest----
-#make a test for the entire following expression using `my_assert`. If the expression fails, make sure to give a descriptive message for `msg` that describes how the expression fails.
+# `my_assert` のテストを書いて、指定したオプションの `msg` が適切に返されるかどうかを確認します。
+
+# `my_assert` 関数のテストを書いてください。`my_assert` 関数を使用して、`expr` を指定しない場合にエラーが適切に返されるかどうかを確認します。
+
+
+
+#---- 難易度: エベレスト ----
+# `my_assert` を使用して、次の式全体をテストします。式がエラーになった場合はその理由を表示するように、`msg` にわかりやすいメッセージを指定してください。
 greeting(get_name("Frosty the Snowman"), divide_by_two(add_two(2)))
 
 
@@ -82,5 +82,5 @@ greeting(get_name("Frosty the Snowman"), divide_by_two(add_two(2)))
 
 
 
-## Submission
-Submit your work here: [placeholder]
+## 提出するもの
+作成したコードをこちらに提出してください: [プレースホルダー]
