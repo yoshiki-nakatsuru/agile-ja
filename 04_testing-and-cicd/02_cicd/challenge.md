@@ -1,22 +1,22 @@
-# Challenge: Enhancing CI/CD for Web Product Development
+# チャレンジ2: Webプロダクト開発のためのCI/CDの強化
 
-## Challenge Description
-In this challenge, you will be presented with two web application scenarios where essential parts of CI/CD are missing. Your task is to identify the shortcomings and propose solutions to introduce CI/CD practices effectively, tailored to the requirements of each web product.
+## 説明
+このチャレンジでは、CI/CDの重要な部分が欠けているWebアプリケーションの事例を2つ紹介します。欠けている部分を特定し、それぞれのWebプロダクトの要件に合わせてCI/CDの手法を効果的に導入するためのソリューションを提案してください。
 
-## Scenarios
-### Scenario 1: E-commerce Platform
-A development team is working on an e-commerce platform that allows sellers to list products, and customers to browse, add items to their carts, and make purchases. Additionally, the platform needs to perform frequent analysis of different types of target customers to personalize their shopping experience. 
+## 事例
+### 事例1: eコマースプラットフォーム
+ある開発チームは、eコマースプラットフォームの開発に取り組んでいます。このプラットフォームでは売り手が商品を出品し、顧客は気に入った商品をカートに入れて購入できます。さらに、このプラットフォームではショッピングサービスをパーソナライズするために、さまざまなタイプのターゲット顧客を頻繁に分析する必要があります。 
 
-The team has successfully implemented continuous integration to run tests on every code commit. However, they face challenges in efficiently deploying new features and updates to the live website while ensuring seamless customer analysis.
+この開発チームは継続的インテグレーションを導入し、コードをコミットするたびにテストを実行できるようにしました。しかし、顧客分析をスムーズに進めながら、現在稼働中のWebサイトに新機能やアップデートを効率的にデプロイすることには課題を抱えています。
 
-### Scenario 2: Travel Media Website
-A development team is building a travel media website where multiple writers use a Content Management System (CMS) to create, update, and delete posts simultaneously. The team uses version control and has set up a remote repository for the website's code. However, they rely solely on manual code reviews, which sometimes results in code inconsistencies, conflicts, and publication delays.
+### 事例2: 旅行メディアのWebサイト
+ある開発チームは旅行メディアのWebサイトを開発しています。このWebサイトでは、複数のライターがコンテンツ管理システム (CMS) を使って記事の作成、更新、削除を同時に行います。このチームはバージョン管理を活用しており、Webサイトのコード用のリモートリポジトリをセットアップ済みです。しかし、コードを手動のみでレビューしているため、コードの不整合、コンフリクト、公開の遅れにつながることもあります。
 
-## Deliverables
-Provide a clear and concise document as one markdown file that addresses both examples. Tailor your explanations and proposed solutions specifically to the e-commerce platform with customer analysis and the travel media website development. Your document should not require any coding and can utilize visual aids like flowcharts or diagrams to enhance clarity.
+## 提出するもの
+顧客分析を行うeコマースプラットフォームと旅行メディアのWebサイトの開発について、独自の説明とソリューションを明確かつ簡潔に記載したドキュメントをMarkdown形式で提出してください。ドキュメントにコードを記載する必要はありません。わかりやすくするためにフローチャートやダイアグラムのような視覚的な要素を活用してください。
 
-## Expected Time Limit
-You have 30 minutes to complete this challenge. Focus on providing detailed and coherent explanations for your proposed CI/CD solutions within the given time frame.
+## 制限時間
+このチャレンジの制限時間は30分です。制限時間内に独自のCI/CDソリューションを詳細かつ明瞭に説明してください。
 
-## Note to Learners
-Consider the unique requirements and characteristics of each web product while proposing CI/CD solutions. Demonstrate your understanding of how CI/CD principles can be applied effectively to enhance the development process for these specific web products. Good luck!
+## 注意事項
+CI/CDソリューションを提案する際に、各Webプロダクト固有の要件や特性を考慮してください。このような特定のWebプロダクトの開発プロセスを強化するために、CI/CDの原則を効果的に適用する方法を検討し、ご自分の理解度を示してください。

@@ -1,33 +1,33 @@
-# Challenge: Version Control Advanced
+# チャレンジ1: バージョン管理 (発展)
 
-# Introduction
-This challenge is designed to test and enhance your understanding of advanced Git features like branching and merging as well as working back and forth between local and remote repositories. This challenge consists of a series of tasks that will require you to utilize various Git and GitHub features effectively.
+# はじめに
+このチャレンジは、Gitの高度な機能 (ブランチ作成、マージ、ローカルとリモートのリポジトリ間でのプッシュ/プルなど) についての知識を確認すると同時に、理解を深めることを目的として作られています。チャレンジに含まれている一連のタスクでは、GitとGitHubのさまざまな機能を効果的に活用する必要があります。
 
-In this challenge, you will work on a simple Python program to convert temperatures between Celsius and Fahrenheit. We provide a project template with a function to convert Celsius to Fahrenheit. This function asks the user for input, takes this input and processes it and then it prints a message with the result of the conversion.
+このチャレンジでは、摂氏から華氏または華氏から摂氏に温度を変換する簡単なPythonプログラムに取り組みます。提供されるプロジェクトテンプレートに含まれている摂氏から華氏に変換する関数は、ユーザーが入力した値を受け取って処理し、変換結果を含むメッセージを出力します。
 
-# Tasks
-## Task 1: Clone and Update the Project
-1. Fork this [project](https://github.com/ms1-learner/temperature_converter) on Github.
-2. Clone the project locally to your machine.
-3. Create a branch `fahrenheit_to_celsius` and switch to it.
-4. Write a function `convertFahrenheitToCelsius` that converts temperature from Fahrenheit to Celsius. The formula you can use is `C = 5/9 * (F - 32)`.
-5. Stage and the commit the change.
-6. Push the branch `fahrenheit_to_celsius` to the remote repository. 
-7. Create a pull request and specify what changes you’ve made in the pull request description. Make sure to include your name.
+# タスク
+## タスク1: プロジェクトのクローンと更新
+1. この[プロジェクト](https://github.com/ms1-learner/temperature_converter)をGitHubにフォークします。
+2. プロジェクトを自分のマシンにクローンします。
+3. ブランチ `fahrenheit_to_celsius` を作成し、そのブランチに切り替えます。
+4. 華氏から摂氏に温度を変換する関数 `convertFahrenheitToCelsius` を書きます。温度の変換には `C = 5/9 * (F - 32)` という数式を使用します。
+5. 変更をステージング環境に追加してコミットします。
+6. ブランチ `fahrenheit_to_celsius` をリモートリポジトリにプッシュします。 
+7. プルリクエスト (PR) を作成し、変更内容をPRの説明に明記します。その際、必ず自分の名前を入力してください。
 
-## Task 2: Execute the Program
-1. Merge the branch `fahrenheit_to_celsius` to the `main` branch locally.
-2. Create a branch `execute_program` and switch to it.
-3. Write a function `main` that does the following:
-- Prints a message “Enter c if you want to convert from Fahrenheit to Celsius”.
-- Prints another message “Enter f if you want to convert from Celsius to Fahrenheit”
-- Checks the user input and acts according to the following:
-    - If user input is `"c"` , the function `convertFahrenheitToCelsius` should be called.
-    - Else if user input is `"f"`, the function `convertCelsiusToFahrenheit` should be called.
-    - Else, if the user input is anything else, print a message “Incorrect input. Please try again later”.
-1. Stage and commit the change.
-2. Switch back to the `main` branch.
-3. Add the following code:
+## タスク2: プログラムの実行
+1. ブランチ `fahrenheit_to_celsius` をローカルの `main` ブランチにマージします。
+2. ブランチ `execute_program` を作成し、そのブランチに切り替えます。
+3. 次の処理を実行する `main` 関数を書きます。
+- 「Enter c if you want to convert from Fahrenheit to Celsius」(華氏から摂氏に変換したい場合はcと入力してください) というメッセージを出力します。
+- 「Enter f if you want to convert from Celsius to Fahrenheit」(摂氏から華氏に変換したい場合はfと入力してください) というメッセージを出力します。
+- ユーザーの入力をチェックし、次の処理を実行します。
+    - ユーザーが `c` と入力した場合は、関数 `convertFahrenheitToCelsius` を呼び出します。
+    - ユーザーが `f` と入力した場合は、関数 `convertCelsiusToFahrenheit` を呼び出します。
+    - ユーザーが「c」でも「f」でもない値を入力した場合は、「Incorrect input. Please try again later」(無効な入力です。後でもう一度お試しください) というメッセージを出力します。
+1. 変更をステージング環境に追加してコミットします。
+2. `main` ブランチに戻ります。
+3. 次のコードを追加します。
 
 ```python
 def main():
@@ -36,21 +36,21 @@ def main():
 main()
 ```
 
-1. Stage and commit the change.
-2. Merge `execute_program` branch into `main` branch.
-3. A merge conflict will arise, solve the conflict and keep the version of `main` that you created.
-4. Once the merge conflict is solved, push the `execute_program` branch to the remote repository.
-5. Create a pull request and specify what changes you’ve made in the pull request description. Make sure to include your name.
+1. 変更をステージング環境に追加してコミットします。
+2. `execute_program` ブランチを `main` ブランチにマージします。
+3. マージコンフリクトが発生した場合は、作成した `main` バージョンを維持するようにコンフリクトを解消します。
+4. マージコンフリクトが解消したら、`execute_program` ブランチをリモートリポジトリにプッシュします。
+5. プルリクエスト (PR) を作成し、変更内容をPRの説明に明記します。その際、必ず自分の名前を入力してください。
 
-## (Optional) Task 3 : Enhance the Program
-1. Create a branch `enhancements` and switch to it.
-2. Think of any enhancement you think this program can benefit from. Here are some ideas:
-    - Add functions to convert between Kelvin and Fahrenheit, and Kelvin and Celsius.
-    - On incorrect user input, make the program re-run automatically until a valid input is created.
-    - Use the `time` Python module to add some pauses between printed messages to simulate a real program that processes data in the background before sending a response.
-3. Push the `enhancements` branch to the remote repository. 
-4. Create a pull request and specify what changes you’ve made in the pull request description. Make sure to include your name.
+## (オプション) タスク3: プログラムの拡張機能
+1. `enhancements` ブランチを作成し、そのブランチに切り替えます。
+2. このプログラムをさらに便利にするために、次のような拡張機能を考えます。
+    - ケルビンと華氏、ケルビンと摂氏との変換関数を追加する
+    - ユーザーが無効な値を入力した場合、有効な値が入力されるまでプログラムを自動的に繰り返し実行する
+    - Pythonの `time` モジュールを使って出力メッセージの間に一時停止を追加し、データを処理する実際のプログラムをバックグラウンドでシミュレートしてから応答を送信する
+3. `enhancements` ブランチをリモートリポジトリにプッシュします。 
+4. プルリクエスト (PR) を作成し、変更内容をPRの説明に明記します。その際、必ず自分の名前を入力してください。
 
-# What you need to submit
-1. The link to your forked Github repository.
-2. The local project folder, in `.zip` format.
+# 提出するもの
+1. フォークしたGitHubリポジトリへのリンク
+2. ローカルのプロジェクトフォルダー (`.zip` 形式)

@@ -1,41 +1,41 @@
-# Challenge: Version Control Fundamentals
+# チャレンジ1: バージョン管理 (基礎)
 
-# Introduction
-This challenge is designed to test and enhance your understanding of Git version control system and Github. This challenge consists of a series of tasks that will require you to utilize various Git and GitHub features effectively. By completing this challenge, you will gain a solid foundation in Git and Github, essential skills for any developer or team working on software projects.
+# はじめに
+このチャレンジは、Git (バージョン管理システム) とGitHubについての知識を確認すると同時に、理解を深めることを目的として作られています。チャレンジに含まれている一連のタスクでは、GitとGitHubのさまざまな機能を効果的に活用する必要があります。このチャレンジを完了すると、ソフトウェアプロジェクトに携わる開発者やチームにとって不可欠なスキルであるGitとGitHubの基礎がしっかりと身に付きます。
 
-# Tasks
-## Task 1: Setup the Project
-1. Create a folder anywhere locally on your machine. Give it any name you like.
-2. Open this folder in a code editor of your choice and initialize a Git repository inside it.
-3. Configure your Git username and email.
-4. Create a `README.md` file and add a brief introduction about yourself and your project.
-5. Create the main file where you will be doing the changes. It can be of any type. We recommend an `html` file but it’s not required.
+# タスク
+## タスク1: プロジェクトのセットアップ
+1. ローカルマシンの任意の場所にフォルダーを作成します。フォルダー名は自由に付けてください。
+2. このフォルダーを任意のコードエディターで開き、そこでGitリポジトリを初期化します。
+3. Gitのユーザー名とメールアドレスを設定します。
+4. `README.md` ファイルを作成し、簡単な自己紹介とプロジェクトの説明を追加します。
+5. 今後変更を加えていくファイル (以降はこのファイルを「メインファイル」と呼びます) を作成します。ファイル形式は自由です。`html` ファイルをお勧めしますが、必須ではありません。
 
-## Task 2: Tracking Changes
-1. Stage the changes you made to the project so far. Submit your first commit with the message: `“Initial Commit”`.
-2. Log the project history and take a screenshot. Rename the screenshot file to `screenshot_1` and save it in some place **different** from your project folder.
-3. Add more changes to your project’s main file, stage and commit these changes. Set the commit message to whatever you like.
-4. Repeat step 3.
-5. Assume the changes you made in step 4 are unneeded. Undo Step 4 changes. Make sure you use the proper command to undo these changes completely (including deleting the commit from the project history)
-6. Log the project history and take a screenshot. Rename the screenshot file to `screenshot_2` and save it in some place **different** from your project folder.
-7. Add more changes to your project’s main file, stage and commit these changes. Set the commit message to whatever you like.
-8. Repeat Step 7.
-9. Undo the changes made in step 7. Make sure you use the proper command to undo these changes completely but **DO NOT** delete any commits. 
-10. Log the project history and take a screenshot. Rename the screenshot file to `screenshot_3` and save it in some place **different** from your project folder.
+## タスク2: 変更の追跡
+1. これまでにプロジェクトに加えた変更をステージングします。`"Initial Commit"` (最初のコミット) というメッセージをつけて最初のコミットを送信します。
+2. プロジェクトの履歴を確認し、スクリーンショットをとります。スクリーンショットのファイル名を `screenshot_1` に変更し、プロジェクトフォルダーとは**別の**場所に保存します。
+3. プロジェクトのメインファイルにさらに変更を加え、ステージング環境に追加してから変更をコミットします。コミットメッセージは自由に書いてください。
+4. 手順3を繰り返します。
+5. 手順4で行った変更が不要だったと仮定し、手順4の変更を元に戻します。変更を完全に取り消す (プロジェクト履歴からもコミットを削除する) ための適切なコマンドを使用してください。
+6. プロジェクト履歴を確認し、スクリーンショットをとります。スクリーンショットのファイル名を `screenshot_2` に変更し、プロジェクトフォルダーとは**別の**場所に保存します。
+7. プロジェクトのメインファイルにさらに変更を加え、ステージング環境に追加してから変更をコミットします。コミットメッセージは自由に書いてください。
+8. 手順7を繰り返します。
+9. 手順7で行った変更を元に戻します。変更を完全に取り消すための適切なコマンドを使用してください。ただし、コミットは削除**しない**ようにします。 
+10. プロジェクト履歴を確認し、スクリーンショットをとります。スクリーンショットのファイル名を `screenshot_3` に変更し、プロジェクトフォルダーとは**別の**場所に保存します。
 
-## Task 3: Creating a Remote Repository
-1. Sign in to your Github account. If you don’t have any, create a new one.
-2. Create a new repository on Github. Give it the same name you gave to your project local folder. Make sure to untick the option to create a `README` file since you already created one locally.
-3. Link the newly created remote repository to your local one.
-4. Run a command to ensure the remote repository has been linked successfully.
-5. Take a screenshot of your terminal after your run the command on step 4. Rename the screenshot file to `screenshot_4` and save it in some place **different** from your project folder.
-6. Run a command to make sure your project working tree is clean. (i.e: there are no untracked changes)
-7. Push everything you have on the `main` branch to the remote Github repository.
-8. Go to your Github repository account and edit the `README` file there. Save the changes and commit them on Github.
-9. Now, your Github repository is ahead of your local one by 1 commit. To ensure they remain in sync, run a command to bring in the change you made on Github to your local repository. 
-10. Log the project history and take a screenshot. Rename the screenshot file to `screenshot_5` and save it in some place **different** from your project folder.
+## タスク3: リモートリポジトリの作成
+1. GitHubアカウントにサインインします。アカウントがない場合は新規作成します。
+2. GitHub上に新しいリポジトリを作成します。プロジェクトのローカルフォルダーと同じ名前をつけます。ローカルですでに `README` ファイルを作成しているので、READMEファイルの作成オプションをオフにします。
+3. 新しく作成したリモートリポジトリをローカルリポジトリにリンクします。
+4. リモートリポジトリが正常にリンクされたことを確認するコマンドを実行します。
+5. 手順4でコマンドを実行した後、ターミナルのスクリーンショットをとります。スクリーンショットのファイル名を `screenshot_4` に変更し、プロジェクトフォルダーとは**別の**場所に保存します。
+6. コマンドを実行し、プロジェクトの作業ツリーがクリーンな状態か (追跡対象外の変更がないか) を確認します。
+7. `main` ブランチにあるものをすべてリモートのGitHubリポジトリにプッシュします。
+8. GitHubリポジトリのアカウントにアクセスし、`README` ファイルを編集します。変更を保存し、GitHubにコミットします。
+9. 現在、GitHubのリポジトリがローカルのリポジトリより1コミット分進んでいる状態です。同期を維持するために、GitHubで行った変更をローカルリポジトリに取り込むコマンドを実行します。 
+10. プロジェクト履歴を確認し、スクリーンショットをとります。スクリーンショットのファイル名を `screenshot_5` に変更し、プロジェクトフォルダーとは**別の**場所に保存します。
 
-# What you need to submit
-1. The link to your Github repository.
-2. The local project folder, in `.zip` format.
-3. The screenshots folder, in `.zip` format.
+# 提出するもの
+1. 自分のGitHubリポジトリへのリンク
+2. ローカルのプロジェクトフォルダー (`.zip` 形式)
+3. スクリーンショットのフォルダー (`.zip` 形式)
