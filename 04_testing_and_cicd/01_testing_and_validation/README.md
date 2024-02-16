@@ -63,9 +63,4 @@ std::string greeting(const std::string& name, double num) {
 ​
 // `my_assert` 用のテスト `test_my_assert_true` を作成し、式がtrueと評価されたときに適切に処理するかどうかをチェックしてください。
 ​
-/*----難易度: エベレスト----*/
-​
-// 次の式全体をテストする `test_complex_greeting` を `my_assert` を使用して作成してください。式がエラーになった場合は、エラーの理由がわかるメッセージを `msg` に指定してください。
-// greeting(contains("Frosty the Snowman", {"Oatmeal", "Prancer", "Rudolph", "Andy"}), divide_by_two(add_two(2)));
-​
 ```
