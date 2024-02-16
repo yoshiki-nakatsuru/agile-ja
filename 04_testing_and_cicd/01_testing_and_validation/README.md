@@ -38,7 +38,6 @@ double divide_by_two(double num) {
 ​
 std::string greeting(const std::string& name, double num) {
     std::string message {"Hello, " + name + ". It is " + std::to_string(num) + " degrees warmer today than yesterday"};
-    std::cout << message << std::endl;
     return message;
 }
 ​
